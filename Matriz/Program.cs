@@ -16,6 +16,9 @@ namespace Matriz
             ToDo listaDeTarefas = new ToDo();
 
             listaDeTarefas.ListarTarefa();
+
+
+            listaDeTarefas.ListarTarefa();
             Console.WriteLine("Adicione um item:");
             string novoItem = Console.ReadLine();
             listaDeTarefas.AdicionarTarefa(novoItem);
@@ -24,14 +27,16 @@ namespace Matriz
             Console.WriteLine("Remova um item:");
             string removaItem = Console.ReadLine();
             listaDeTarefas.RemoverTarefa(removaItem);
+            listaDeTarefas.ListarTarefa();
 
-            Console.WriteLine("Qual o indice?:");
+            Console.WriteLine("Qual a posição da tarefa que você deseja modificar?");
             int novoIndice = int.Parse(Console.ReadLine());
             Console.WriteLine("Qual o novo item?:");
             string novoValor = Console.ReadLine();
             listaDeTarefas.AtualizarTarefa(novoIndice, novoValor);
+            listaDeTarefas.ListarTarefa();
 
-          
+
         }
     }
 }
