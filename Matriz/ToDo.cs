@@ -31,7 +31,7 @@ namespace Matriz
         }
         public void ListarTarefa()
         {
-            Console.WriteLine(Tarefas);
+            Tarefas.ToList().ForEach(Console.WriteLine);
         }
 
 
